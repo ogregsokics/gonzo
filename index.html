@@ -40,6 +40,15 @@
               <button onclick="copy3()">webshopon</button>
               <textarea rows="1" cols="1" id="textareaRSS3">Gonzó szakácskönyv a webshopon
 </textarea>
+    
+    
+    <br>
+            <br>
+              <button onclick="copy4()">desc</button>
+              <textarea rows="1" cols="1" id="textareaRSS4">Puzsér Róbert új könyve, a Gonzó szakácskönyv megvásárolható: https://www.szelsokozep.hu
+Előre dedikált példányok kizárólag itt kaphatóak!
+</textarea>
+    
 
 
     <script>
@@ -84,6 +93,17 @@
 
 
         var copyText = document.getElementById("textareaRSS3");
+        copyText.select();
+        document.execCommand("copy");
+
+    }
+    
+    
+    let copy4 = () => {
+
+
+
+        var copyText = document.getElementById("textareaRSS4");
         copyText.select();
         document.execCommand("copy");
 
