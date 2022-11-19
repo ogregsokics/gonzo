@@ -23,30 +23,41 @@
 
 
   <button onclick="copy0()">szelsokozep</button>
-            <textarea rows="1" cols="1" id="textareaRSS">https://www.szelsokozep.hu
+            <textarea rows="1" cols="10" id="textareaRSS">https://www.szelsokozep.hu
 </textarea>
 
 <br>
             <br>
 <button onclick="copy1()">Gonzó</button>
-              <textarea rows="1" cols="1" id="textareaRSS1">Gonzó Szakácskönyv</textarea>
+              <textarea rows="1" cols="10" id="textareaRSS1">Gonzó Szakácskönyv</textarea>
 <br>
             <br>
               <button onclick="copy2()">A könyv </button>
-              <textarea rows="1" cols="1" id="textareaRSS2">A könyv kapható a webshopon
+              <textarea rows="1" cols="10" id="textareaRSS2">A könyv kapható a webshopon
 </textarea>
 <br>
             <br>
               <button onclick="copy3()">webshopon</button>
-              <textarea rows="1" cols="1" id="textareaRSS3">Gonzó Szakácskönyv a webshopon
+              <textarea rows="1" cols="10" id="textareaRSS3">Gonzó Szakácskönyv a webshopon
 </textarea>
     
     
     <br>
             <br>
               <button onclick="copy4()">desc</button>
-              <textarea rows="1" cols="1" id="textareaRSS4">Puzsér Róbert új könyve, a Gonzó Szakácskönyv megvásárolható: https://www.szelsokozep.hu
+              <textarea rows="1" cols="10" id="textareaRSS4">Puzsér Róbert új könyve, a Gonzó Szakácskönyv megvásárolható: https://www.szelsokozep.hu
 Előre dedikált példányok kizárólag itt kaphatóak!
+                  
+                  
+</textarea>
+    
+    
+     <br>
+            <br>
+              <button onclick="copy5()">Szakácskönyv</button>
+              <textarea rows="1" cols="10" id="textareaRSS5">Szakácskönyv
+                  
+                  
 </textarea>
     
 
@@ -104,6 +115,16 @@ Előre dedikált példányok kizárólag itt kaphatóak!
 
 
         var copyText = document.getElementById("textareaRSS4");
+        copyText.select();
+        document.execCommand("copy");
+
+    }
+    
+        let copy5 = () => {
+
+
+
+        var copyText = document.getElementById("textareaRSS5");
         copyText.select();
         document.execCommand("copy");
 
